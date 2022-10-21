@@ -1,5 +1,5 @@
 <a id="top"></a>
-[![Build Status](https://github.com/v3io/scaler/workflows/CI/badge.svg)](https://github.com/v3io/scaler/actions)
+[![Build Status](https://github.com/william-lbn/scaler/workflows/CI/badge.svg)](https://github.com/william-lbn/scaler/actions)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Scale to Zero
@@ -14,7 +14,7 @@ Will mostly include pod/s (that will be scaled when needed) wrapped by one or ma
 and k8s service/s that can be used to route incoming requests.
 
 **Resource-scaler** - An implementation of the `ResourceScaler` interface defined in 
-[scaler-types](https://github.com/v3io/scaler-types). It is transplanted inside the autoscaler and dlx using
+[scaler-types](https://github.com/william-lbn/scaler-types). It is transplanted inside the autoscaler and dlx using
 [Go plugins](https://appliedgo.net/plugins/). They use them to perform actions on the specific resource.<br>
 For example, when the autoscaler decides it needs to scale some resource to zero, it executes the resource-scaler's
 `SetScale` function which has the knowledge how to scale to zero its specific resource.
@@ -45,7 +45,7 @@ but you can use which ever you want! You can find some recommended implementatio
 The infrastructure is designed to be generic, flexible and extendable, so as to serve any resource we'd wish to scale 
 to/from zero. All you have to do is implement the specific resource-scaler for your resource. The interface between your 
 resource-scaler and the scale-to-zero infrastructure's components is defined in 
-[scaler-types](https://github.com/v3io/scaler-types)
+[scaler-types](https://github.com/william-lbn/scaler-types)
 
 **Note:** Incompatibility between this scaler vendor dir and your resource-scale vendor dir may break things, 
 therefore it's suggested to put your resource-scaler in its own repo
@@ -76,4 +76,4 @@ You can install the components using the [scaler helm chart](https://github.com/
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
-[releases on this repository](https://github.com/v3io/scaler/releases).
+[releases on this repository](https://github.com/william-lbn/scaler/releases).

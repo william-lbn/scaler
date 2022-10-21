@@ -1,4 +1,4 @@
-module github.com/v3io/scaler
+module github.com/william-lbn/scaler
 
 go 1.14
 

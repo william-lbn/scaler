@@ -1,11 +1,12 @@
 package dlx
 
 import (
+	"fmt"
 	"net/http"
 	"sync"
 	"time"
 
-	"github.com/v3io/scaler/pkg/scalertypes"
+	"github.com/william-lbn/scaler/pkg/scalertypes"
 
 	"github.com/nuclio/errors"
 	"github.com/nuclio/logger"
@@ -56,8 +57,9 @@ func (r *ResourceStarter) getOrCreateResourceSink(originalTarget string,
 
 	if _, found := r.resourceSinksMap[originalTarget]; found {
 		resourceSinkChannel = r.resourceSinksMap[originalTarget]
+		fmt.Println("receive req(found): " + originalTarget)
 	} else {
-
+		fmt.Println("receive req(not found): " + originalTarget)
 		// for the next requests coming in
 		resourceSinkChannel = make(chan responseChannel)
 		r.resourceSinksMap[originalTarget] = resourceSinkChannel

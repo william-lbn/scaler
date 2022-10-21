@@ -4,9 +4,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/v3io/scaler/pkg/dlx"
-	"github.com/v3io/scaler/pkg/pluginloader"
-	"github.com/v3io/scaler/pkg/scalertypes"
+	"github.com/william-lbn/scaler/pkg/dlx"
+	"github.com/william-lbn/scaler/pkg/pluginloader"
+	"github.com/william-lbn/scaler/pkg/scalertypes"
 
 	"github.com/nuclio/errors"
 	"github.com/nuclio/zap"
