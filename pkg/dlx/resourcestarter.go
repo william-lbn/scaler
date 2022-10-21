@@ -1,6 +1,7 @@
 package dlx
 
 import (
+	"fmt"
 	"net/http"
 	"sync"
 	"time"
@@ -56,6 +57,7 @@ func (r *ResourceStarter) getOrCreateResourceSink(originalTarget string,
 
 	if _, found := r.resourceSinksMap[originalTarget]; found {
 		resourceSinkChannel = r.resourceSinksMap[originalTarget]
+		fmt.Println("receive req : " + originalTarget)
 	} else {
 
 		// for the next requests coming in
