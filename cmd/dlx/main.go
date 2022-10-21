@@ -4,8 +4,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/v3io/scaler/cmd/dlx/app"
-	"github.com/v3io/scaler/pkg/common"
+	"github.com/william-lbn/scaler/cmd/dlx/app"
+	"github.com/william-lbn/scaler/pkg/common"
 
 	"github.com/nuclio/errors"
 )

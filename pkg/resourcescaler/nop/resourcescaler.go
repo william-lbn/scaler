@@ -1,7 +1,7 @@
 package nop
 
 import (
-	"github.com/v3io/scaler/pkg/scalertypes"
+	"github.com/william-lbn/scaler/pkg/scalertypes"
 )
 
 type ResourceScaler struct{}

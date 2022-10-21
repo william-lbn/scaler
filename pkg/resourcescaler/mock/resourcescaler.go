@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/v3io/scaler/pkg/scalertypes"
+	"github.com/william-lbn/scaler/pkg/scalertypes"
 
 	"github.com/stretchr/testify/mock"
 )
